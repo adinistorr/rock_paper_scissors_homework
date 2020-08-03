@@ -107,8 +107,8 @@ function updateDOM(winner, userChoice, computerChoice) {
             break;
     }
 
-    computerImageDOM.src = `${computerChoice.toLowerCase()}.png`;
-    userImageDOM.src = `${userChoice.toLowerCase()}.png`;
+    computerImageDOM.src = `${computerChoice}.png`.toLowerCase();
+    userImageDOM.src = `${userChoice}.png`.toLowerCase();
 
     computerScoreDOM.innerText = computerScore;
     userScoreDOM.innerText = userScore;
