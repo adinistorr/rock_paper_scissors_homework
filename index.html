@@ -11,12 +11,12 @@
 </head>
 <body>
     
-    <div class="wrapper vh-100 d-flex align-items-center">
-        <div class="container d-flex flex-column vh-50 justify-content-center align-items-center shadow-lg rounded py-5 px-1">
+    <div class="wrapper vh-100 d-flex align-items-sm-center">
+        <div class="container d-flex flex-column justify-content-center align-items-center shadow-lg rounded py-5 px-1">
             <div class="result-message w-100 shadow-sm border border-dark rounded h5 text-center mx-n3 mt-n5 mb-3 d-none"></div>
 
-            <div class="score row w-100 d-flex justify-content-center px-5">
-                <div class="score-title  h3">SCORE</div>
+            <div class="score row w-100 d-flex justify-content-center px-5 pt-5 pt-sm-0">
+                <div class="score-title  h3 pt-5 pt-sm-5">SCORE</div>
                 <div class="row w-100 p-3 d-flex justify-content-between align text-center px-5">
                     <div class="user-score h1 col-4">0</div>
                     <div class="col-4 d-flex justify-content-center align-items-center">
@@ -29,13 +29,13 @@
                 <div class="players row w-100 px-5 pb-3">
                     <div class="col-4 text-center">
                         <h5 class="w-100">User</h5>
-                        <img src="paper.png" class="user-image w-100 h-auto d-none" alt="">
+                        <img src="paper.png" class="user-image w-100 h-auto d-none col-lg-6 col-md-10" alt="">
                         <div class="lds-spinner w-100 d-none"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
                     </div>
                     <div class="h4 text-center col-4">VS</div>
                     <div class="col-4 text-center">
                         <h5 class="w-100">Computer</h5>
-                        <img src="rock.png" class="computer-image w-100 h-auto d-none" alt="">
+                        <img src="rock.png" class="computer-image w-100 h-auto d-none col-lg-6 col-md-10" alt="">
                         <div class="lds-spinner d-none"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
                     </div>
                 </div>
@@ -46,9 +46,6 @@
                     <option value="OptionsEnum.PAPER">Paper</option>
                     <option value="OptionsEnum.SCISSORS">Scissors</option>
                 </select>
-                <!-- <button class="rock btn btn-warning">Rock</button>
-                <button class="paper btn btn-warning">Paper</button>
-                <button class="scissors btn btn-warning">Scissors</button> -->
             </div>
 
             <button id="play-button" class="btn btn-warning mt-3 py-2 px-5 shadow-sm font-weight-bold">PLAY</button>
