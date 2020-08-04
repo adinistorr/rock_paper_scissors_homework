@@ -37,7 +37,7 @@ let computerImageDOM = document.querySelector('.computer-image');
 let userScoreDOM = document.querySelector('.user-score');
 let userImageDOM = document.querySelector('.user-image');
 let resultMessageDOM = document.querySelector('.result-message');
-let spinnerDOM = document.querySelectorAll('.lds-spinner');
+let spinnerDOM = document.querySelectorAll('.preloader');
 let isLoading = false;
 let userScore = 0;
 let computerScore = 0;
@@ -107,8 +107,8 @@ function updateDOM(winner, userChoice, computerChoice) {
             break;
     }
 
-    computerImageDOM.src = `${computerChoice}.png`.toLowerCase();
-    userImageDOM.src = `${userChoice}.png`.toLowerCase();
+    computerImageDOM.src = `media/${computerChoice}.png`.toLowerCase();
+    userImageDOM.src = `media/${userChoice}.png`.toLowerCase();
 
     computerScoreDOM.innerText = computerScore;
     userScoreDOM.innerText = userScore;
